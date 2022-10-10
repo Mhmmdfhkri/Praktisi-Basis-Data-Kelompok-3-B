@@ -93,14 +93,12 @@ where ss.student_id = 3 ;
 -- membuat user -----
 create user Bigadmin@localhost identified by 'login123';
 create user admin@localhost identified by 'login123';
-create user upstream@localhost identified by 'masuk123';
-create user dream@localhost identified by 'tama123';
+
 
 -- memberikan semua akses tabel kepada user 
 grant all privileges on designdatabase to 'bigadmin'@'localhost';
 
 -- memberi hak akses tabel kepada user 
 grant all privileges on designdatabase.students to 'admin'@'localhost';
-grant all privileges on  designdatabase.course to 'upstream'@'localhost';
-grant all privileges on designdatabase.schedule to 'dream'@'localhost'; 
+ 
 
